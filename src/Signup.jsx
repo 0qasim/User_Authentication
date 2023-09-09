@@ -12,7 +12,8 @@ const Signup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("https://deploy-mern-login.vercel.app/Signup", { name, email, password })
+  axios.post("/Signup", { name, email, password })
+
       .then((result) => {
         console.log(result);
         toast.success("Signup successful")
