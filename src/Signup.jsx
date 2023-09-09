@@ -12,7 +12,7 @@ const Signup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-  axios.post("/Signup", { name, email, password })
+axios.post("https://user-authentication-mu.vercel.app/Signup", { name, email, password })
 
       .then((result) => {
         console.log(result);
