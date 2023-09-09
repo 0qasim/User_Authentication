@@ -15,7 +15,7 @@ const App = () => {
   const [user,setUser]=useState({})
   axios.defaults.withCredentials=true;
   useEffect(() =>{
-    axios.get('https://user-authentication-mu.vercel.app')
+    axios.get('https://user-authentication-mu.vercel.app/')
     .then(user =>{
 
       console.log(user)
