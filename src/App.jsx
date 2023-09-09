@@ -15,7 +15,7 @@ const App = () => {
   const [user,setUser]=useState({})
   axios.defaults.withCredentials=true;
   useEffect(() =>{
-    axios.get('http://localhost:3001/')
+    axios.get('https://deploy-mern-login.vercel.app/')
     .then(user =>{
 
       console.log(user)
